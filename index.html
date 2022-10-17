@@ -1,0 +1,153 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+
+<body>
+
+
+
+    <div class="top">
+
+        <img src="minion.jpg" alt="" class="a" style="float:right">
+        <h1 class="intro">MINION WHO?</h1>
+        <!-- <h3 class="head3"></h3> -->
+
+
+        <ul class="add">
+            <li>A male species of fictional yellow creatures</li>
+            <li>Appeared in Illumination's Despicable Me franchise</li>
+            <li>Speak in an incomprehensible language,called Minionese</li>
+            <li>Largely unintelligible</li>
+
+        </ul>
+
+    </div>
+    <br><br>
+
+    <div class="middle">
+        <br>
+        <img src="Gru.png" alt="" class="g" style="float:left"> <br><br><br><br><br><br><br>
+        <h1 style="font-family: 'Silkscreen', cursive; text-align: center; color: rgba(53, 46, 46, 0.808) " > GRU </h1>
+        <h2>The Master of Evil</h2>
+        <p class="add1">
+            Felonius Gru (or simply Gru) is the son of Marlena Gru and the late Robert Gru, and is the main
+            protagonist of the Despicable Me franchise. He is a former supervillain and is the husband of AVL agent Lucy
+            Wilde.
+            He has three adopted daughters Margo, Edith, and Agnes.
+        </p>
+        <br><br><br><br><br><br><br><br><br>
+
+       
+    </div>
+    <div class="container">
+        <div class="inner1">
+            <img src="13f.gif" alt="" class="icon1">
+            <br> </br> <br></br>
+            <h3>GOGGLES</h3>
+               
+            <p> He lost his goggles and his eyesight dramatically diminished. The goggles, or glasses, are a way for them to see the world
+                and help their masters, without it all being blurry and confusing.</p>
+        </div>
+        <div class="inner2">
+            <img src="banana.png" alt="" class="icon2">
+            <br></br>
+            <h3>FAV FOOD</h3>
+            <p> When a minion says banana it
+                sounds way to funny and any other fruit or veggie may not have sounded as funny as banana. </p>
+        </div>
+        <div class="inner3">
+            <img src="pp.png" alt="" class="icon3">
+            <br></br> <br></br>
+            <h3>PURPLE HEAD</h3>
+            <p>They were Gru's minions after being abducted by El Macho who turn them into purple
+                monsters with the PX-41 serum for his global domination. </p>
+        </div>
+    </div>
+
+
+
+
+    <br><br><br><br>
+
+    <div class="welcome-p">
+        <img src="m.gif" alt="">
+    </div>
+
+    <div class="welcome">
+        <h2>
+            <script language="JavaScript1.2">
+
+                var message = "YO! TO THE MINION WORLD"
+
+                var neonbasecolor = "#2B15F7 "
+                var neontextcolor = "#FFCF06"
+                var flashspeed = 120  //in milliseconds
+
+
+                ///No need to edit below this line/////
+
+                var n = 0
+                if (document.all || document.getElementById) {
+                    document.write('<font color="' + neonbasecolor + '">')
+                    for (m = 0; m < message.length; m++)
+                        document.write('<span id="neonlight' + m + '">' + message.charAt(m) + '</span>')
+                    document.write('</font>')
+                }
+                else
+                    document.write(message)
+
+                function crossref(number) {
+                    var crossobj = document.all ? eval("document.all.neonlight" + number) : document.getElementById("neonlight" + number)
+                    return crossobj
+                }
+
+                function neon() {
+
+                    //Change all letters to base color
+                    if (n == 0) {
+                        for (m = 0; m < message.length; m++)
+                            //eval("document.all.neonlight"+m).style.color=neonbasecolor
+                            crossref(m).style.color = neonbasecolor
+                    }
+
+                    //cycle through and change individual letters to neon color
+                    crossref(n).style.color = neontextcolor
+
+                    if (n < message.length - 1)
+                        n++
+                    else {
+                        n = 0
+                        clearInterval(flashing)
+                        setTimeout("beginneon()", 1500)
+                        return
+                    }
+                }
+
+                function beginneon() {
+                    if (document.all || document.getElementById)
+                        flashing = setInterval("neon()", flashspeed)
+                }
+                beginneon()
+
+
+            </script>
+
+        </h2>
+
+
+
+
+
+
+
+
+
+</body>
+</head>
+
+</html>
